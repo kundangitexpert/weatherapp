@@ -1,0 +1,147 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(weatherbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+}
+
+.inputs {
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: gold;
+    height: auto; /* Adjusted for responsiveness */
+}
+
+.inputs input[type="text"] {
+    height: 4rem;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 20rem;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    margin-right: 4px;
+}
+
+.inputs input[type="submit"] {
+    height: 3rem;
+    width: auto;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: none;
+}
+
+.display {
+    text-align: center;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 520px;
+    color: rgb(19, 201, 19);
+}
+
+.wrapper {
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.wrapper h2 {
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    background-color: rgb(31, 31, 255);
+}
+
+.wrapper p {
+    margin: 20px 10%; /* Adjusted for responsiveness */
+    text-align: left;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#add {
+    cursor: pointer;
+}
+#add:hover{
+    background-color: yellow;
+}
+
+.wrapper h2 span {
+    font-size: 26px;
+    color: aqua;
+}
+
+.wrapper p span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .wrapper p {
+        margin: 20px 5%; /* Adjusted for smaller screens */
+    }
+}
+
+/* Media queries for smaller devices like mobile phones */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .inputs {
+        padding: 1rem 0; /* Adjusted for smaller screens */
+    }
+
+    .inputs input[type="text"] {
+        width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+        margin: 0;
+    }
+
+    .inputs input[type="submit"] {
+        margin: 10px 0;
+    }
+
+    .wrapper {
+        margin: 20px auto;
+        height: auto; /* Adjusted for smaller screens */
+    }
+
+    .wrapper p {
+        margin: 10px 5%; /* Adjusted for smaller screens */
+        font-size: 18px; /* Adjusted for smaller screens */
+    }
+}
